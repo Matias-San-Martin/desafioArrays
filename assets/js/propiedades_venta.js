@@ -3,7 +3,40 @@ const modifyCard = document.querySelector(".containerCard")
 let html = ""
 
 const propiedadesVenta = [
-  {
+    {
+        nombre: 'Penthouse de lujo con terraza panorámica', // <h5>
+        src: 'https://resizer.glanacion.com/resizer/fhK-tSVag_8UGJjPMgWrspslPoU=/768x0/filters:quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/CUXVMXQE4JD5XIXX4X3PDZAVMY.jpg', // <img> src
+        descripcion: 'Este penthouse de lujo ofrece una terraza panorámica con vistas espectaculares',
+        ubicacion: '567 Skyline Avenue, Skyview City, CA 56789', // <p>
+        habitaciones: 4, // <i>
+        baños: 2, // <i>
+        costo: 200000, // <p><i>
+        smoke: true, // <p><i>
+        pets: true // <p><i>
+    },
+    {
+        nombre: 'Apartamento acogedor en la montaña', // <h5>
+        src: 'https://cdn.bioguia.com/embed/3d0fb0142790e6b90664042cbafcb1581427139/furgoneta.jpg', // <img> src
+        descripcion: 'Este apartamento acogedor está situado en lo alto de una montaña con impresionantes vistas',
+        ubicacion: '789 Mountain Road, Summit Peaks, CA 23456', // <p>
+        habitaciones: 4, // <i>
+        baños: 2, // <i>
+        costo: 200000, // <p><i>
+        smoke: true, // <p><i>
+        pets: true // <p><i>
+    },
+    {
+        nombre: 'Apartamento de lujo en zona exclusiva', // <h5>
+        src: 'https://fotos.perfil.com/2018/09/21/trim/950/534/nueva-york-09212018-366965.jpg', // <img> src
+        descripcion: 'Este apartamento de lujo está ubicado en una exclusiva zona residencial',
+        ubicacion: '123 Luxury Lane,Prestige Suburb, CA 45678', // <p>
+        habitaciones: 4, // <i>
+        baños: 2, // <i>
+        costo: 200000, // <p><i>
+        smoke: true, // <p><i>
+        pets: true // <p><i>
+    },
+    {
     nombre: 'Casa de campo en las afueras', // <h5>
     src: 'https://s37805.pcdn.co/fotocasa-life/wp-content/uploads/2020/08/casa-campo-de-cuento.png', // <img> src
     descripcion: 'Hermosa casa de campo con amplio jardín y piscina.',
@@ -74,12 +107,14 @@ for(let propiedad of propiedadesVenta){
                 </p>
                 <p><i class="fas fa-dollar-sign"></i> ${propiedad.costo} 
                 </p>
-                <p class="text-danger">
-                  <i class="fas fa-smoking-ban"></i> No se permite fumar
-                </p>
-                <p class="text-danger">
-                  <i class="fa-solid fa-ban"></i> No se permiten mascotas
-                </p>
+                <div class="smoke">
+                ${propiedad.smoke ? '<p class="text-success"><i class="fas fa-smoking"></i> Permitido fumar</p>':
+                '<p class="text-danger"><i class="fas fa-smoking-ban"></i>  No se permite fumar' }
+                </div>
+
+                <div class="pets">
+                ${propiedad.pets ? '<p class="text-success"><i class="fas fa-paw"></i> Si se permiten mascotas</p>':'<p class="text-danger"><i class="fas fa-ban"></i> No se permiten mascotas<p>'}
+                </div>
             </div>
         </div>
     </div>
