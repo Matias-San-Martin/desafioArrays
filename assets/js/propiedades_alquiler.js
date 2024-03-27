@@ -1,5 +1,4 @@
 const modifyCard = document.querySelector(".containerCard")
-//const linkEnVenta = document.querySelector(".nav-link")
 let html = ""
 
 const propiedadesAlquiler = [
@@ -69,17 +68,6 @@ const propiedadesAlquiler = [
     smoke: true,
     pets: false
   },
-  /*{
-    nombre: 'Apartamento céntrico',
-    src: 'https://cf.bstatic.com/xdata/images/hotel/max1024x768/494882248.jpg?k=0fb759de84efde02b7f5c326a40c1d1d112de2c4860f2dfab93f686ee6e4c48d&o=&hp=1',
-    descripcion: 'Apartamento moderno en el corazón de la ciudad.',
-    ubicacion: 'Centro de la ciudad',
-    habitaciones: 2,
-    baños: 2,
-    costo: 150000,
-    smoke: false,
-    pets: false
-  },*/
 ];
 
 for(let propiedad of propiedadesAlquiler){ 

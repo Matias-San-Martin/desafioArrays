@@ -1,5 +1,4 @@
 const modifyCard = document.querySelector(".containerCard")
-//const linkEnVenta = document.querySelector(".nav-link")
 let html = ""
 
 const propiedadesVenta = [
@@ -69,17 +68,6 @@ const propiedadesVenta = [
     smoke: true,
     pets: true
   },
-  /*{
-    nombre: 'Ático con terraza privada',
-    src: 'https://www.balearic-properties.com/property-image/1920_AITAJP1957_66601_V0_8275.jpg',
-    descripcion: 'Ático con terraza privada y vistas espectaculares.',
-    ubicacion: 'Centro de la ciudad',
-    habitaciones: 3,
-    baños: 2, // <i>
-    costo: 280000,
-    smoke: true,
-    pets: true
-  },*/
 ];
 
 
